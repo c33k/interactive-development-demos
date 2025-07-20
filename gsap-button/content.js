@@ -1,9 +1,18 @@
-export const htmlContent = `<div id="gsap-button">
+export const htmlContent = `<button id="gsap-button">
   <span>GSAP Button</span>
   <canvas class="bgcanvas"></canvas>
-</div>`;
+</button>`;
 
-export const cssContent = `.gsap-button {
+export const cssContent = `#gsap-button {
+  /* Reset default button styles */
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  
+  /* Custom styles */
   position: relative;
   display: flex;
   flex: 1;
@@ -14,27 +23,27 @@ export const cssContent = `.gsap-button {
   transition: transform 0.15s ease-out;
 }
 
-.gsap-button > * {
+#gsap-button > * {
   z-index: 1;
 }
 
-.gsap-button:hover {
+#gsap-button:hover {
   color: black;
   cursor: pointer;
 }
 
-.gsap-button:active {
+#gsap-button:active {
   transform: scale(0.95);
 }
 
-.gsap-button span {
+#gsap-button span {
   font-size: 1.5rem;
   text-align: center;
   line-height: 50px;
   width: 100%;
 }
 
-.gsap-button > .bgcanvas {
+#gsap-button > .bgcanvas {
   z-index: 0;
   position: absolute;
   left: 0;

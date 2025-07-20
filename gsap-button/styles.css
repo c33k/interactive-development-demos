@@ -1,4 +1,13 @@
 #gsap-button {
+  /* Reset default button styles */
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  
+  /* Custom styles */
   position: relative;
   display: flex;
   flex: 1;
