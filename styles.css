@@ -1,0 +1,152 @@
+:root {
+  --primary-color: #f2fce1;
+  --secondary-color: #333;
+  --border-radius: 50px;
+  --dark-bg-color: #222222;
+  --main-red: #d81a1a;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar > .menuitem {
+  color: var(--main-red);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar > .menuitem:hover {
+  color: var(--secondary-color);
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 10px;
+  padding: 4px;
+}
+
+.card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.description {
+  flex: 0.1;
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+  flex: 0.9;
+  min-height: 600px;
+}
+
+.demo {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--dark-bg-color);
+}
+
+.code {
+  flex: 1;
+}
+
+/* Tabs styling */
+.tabs {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-buttons {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
+
+.tab-button {
+  padding: 12px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.tab-button.active {
+  color: var(--secondary-color);
+  border-bottom-color: var(--primary-color);
+  background-color: white;
+}
+
+.tab-content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  overflow: auto;
+}
+
+.tab-panel.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tab-panel pre {
+  margin: 0;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  overflow-x: auto;
+  padding: 0;
+}
+
+.tab-panel code {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 13px;
+  line-height: 1.5;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Development Demos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="gsap-button/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/codepen-embed.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="menuitem" href="#">DEMOS</a>
+    </nav>
+    <div class="root">
+      <div class="card">
+        <div class="description">
+          <h3>GASP Style Button</h3>
+          <p>This button is my attempt to implement the effect you find on GSAP's website.</p>
+        </div>
+        <div class="content">
+          <div class="demo">
+  
+            <div id="gsap-button">
+              <span>GSAP Button</span>
+              <canvas class="bgcanvas"></canvas>
+            </div>
+          </div>
+  
+          <div class="code">
+            <div class="tabs">
+              <div class="tab-buttons">
+                <button class="tab-button active" data-tab="html">HTML</button>
+                <button class="tab-button" data-tab="css">CSS</button>
+                <button class="tab-button" data-tab="javascript">JavaScript</button>
+              </div>
+              <div class="tab-content">
+                <div class="tab-panel active" id="html">
+                  <pre style="tab-size: 2;"><code class="language-html">Loading...</code></pre>
+                </div>
+                <div class="tab-panel" id="css">
+                  <pre><code class="language-css">Loading...</code></pre>
+                </div>
+                <div class="tab-panel" id="javascript">
+                  <pre><code class="language-javascript">Loading...</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="gsap-button/index.js"></script>
+    <script type="module" src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  </body>
+</html>
