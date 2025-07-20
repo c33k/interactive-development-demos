@@ -4,6 +4,7 @@
   --border-radius: 50px;
   --dark-bg-color: #222222;
   --main-red: #d81a1a;
+  --light-gray: #aaaaaa;
   font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 }
 
@@ -67,7 +68,7 @@ body {
 .tag {
   display: inline-block;
   padding: 4px 12px;
-  background-color: var(--main-red);
+  background-color: var(--light-gray);
   color: var(--primary-color);
   border-radius: 16px;
   font-size: 0.8rem;
@@ -77,7 +78,7 @@ body {
 }
 
 .tag:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--main-red);
   color: var(--primary-color);
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
